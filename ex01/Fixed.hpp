@@ -1,6 +1,6 @@
 #pragma once
-#include "iostream"
-
+#include <iostream>
+#include <cmath>
 class Fixed
 {
 	public:
@@ -21,3 +21,5 @@ class Fixed
 		int					_fixedPointValue;
 		static const int	_numberOfFractionalBits = 8;
 };
+
+std::ostream & operator<<(std::ostream & o, Fixed const & i);
